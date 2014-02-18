@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Poliedros</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Menu -->
+		
+				
+
+				<!--	<ul id="navigation">
+						<!--<a href="#" class="show">[hide]</a>
+						<a href="#" class="hide">[show]</a>-->
+						<!--<li><b><input type="checkbox" id="tm" />Menu</b></li>--
+						<li><a>Menu</a></li>
+						<li><a>Test</a></li>
+						<li><a>Test</a></li>
+						<li><a>Test</a></li>
+						<li><a>Test</a></li>
+						<!--<li><a href="#admn">Administration</a></li>
+						<li><a href="#tools">Tools</a></li>
+						<li><a href="#contact">Contact</a></li>--
+					</ul> -->
+
+				
+			
+			
+			<!--<div id="wrapper">
+				<div class="mobile">
+					<!-- Checkbox to toggle the menu -->
+					<!--<input type="checkbox" id="tm" />-->
+					<!-- The menu -->
+			<!--		<ul class="sidenav">
+						<li><a href="#"><i class="fa fa-check"></i><b>Seção 1</b></a></li>
+						<li><a href="#"><i class="fa fa-inbox"></i><b>Seção 2</b></a></li>
+						<li><a href="#"><i class="fa fa-pencil"></i><b>Seção 3</b></a></li>
+						<li><a href="#"><i class="fa fa-cog"></i><b>Seção 4</b></a></li>
+						<li><a href="#"><i class="fa fa-star"></i><b>Seção 5</b></a></li>
+						<li><a href="#"><i class="fa fa-power-off"></i><b>Seção 6</b></a></li>
+					</ul>-->
+		<!-- Content area -->
+		<!--			<section>
+						<!-- Label for #tm checkbox -->
+						<!--<label for="tm">Menu</label>-->
+		<!--			</section>-->
+				</div>
+			</div> 
+
+		<!-- Script mudar titulo -->
+				<script>
+					setInterval(function()
+					{
+						//tem_div = 0;
+						for (i=0;i<$('.wrapper').length;i++){
+						var altura_da_tela = $(window).scrollTop(),
+						altura_da_div = $($('.wrapper')[i]).offset().top,
+						distancia_entre_a_div_e_a_tela = (altura_da_div - altura_da_tela);
+						if (distancia_entre_a_div_e_a_tela <0)
+						{
+							$('#nav').html($($('.wrapper')[i]).attr("data-titulo"));
+							//tem_div=1;
+						}
+					}
+				
+					//if(!tem_div) $('#nav').html("");
+					}, 50);
+				
+				</script>
+		<!-- Top -->
+			<nav id="nav">			
+				<ul class="container">
+					<!--<li><b><input type="checkbox" id="tm" />Menu</b></li>-->
+					<li><a>Introdução</a></li>
+					<!--<li><a href="#admn">Administration</a></li>
+					<li><a href="#tools">Tools</a></li>
+					<li><a href="#contact">Contact</a></li>-->
+				</ul>
+			</nav>
+
+		<!-- Intro -->
+			<div data-titulo="<li><a>Introdução</a></li>" class="wrapper wrapper-style1 wrapper-first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+							<span class="logo image image-full"><img src="images/Octahedron.gif" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1>Introdução a poliedros!</h1>
+							</header>
+							<p style="text-align:justify">As figuras geométricas espaciais também recebem o nome de sólidos geométricos, que são divididos em: poliedros e corpos redondos. Vamos abordar as definições e propriedades dos poliedros. </p>
+							<a href="#intro" class="button button-big">Introdução ao assunto</a>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Introdução -->
+			<div data-titulo="<li><a>Poliedros</a></li>" class="wrapper wrapper-style2">
+				<article id="intro">
+					<header>
+						<h2>Poliedros</h2>
+						
+					</header>
+					<div class="container">
+						
+					<footer>
+					<span class="logo image "><img src="images/intro.jpg" title="Face, Vértice e Aresta" alt="" /></span>
+						<p>Poliedros são figuras geométricas formadas por três elementos básicos: vértices, arestas e faces. Um poliedro é considerado regular quando suas faces são polígonos regulares e congruentes. </p>
+						
+					</footer>
+				</article>
+			</div>
+
+		<!-- Poliedros convexos -->
+			<div data-titulo="<li><a>Poliedros Convexos</a></li>" class="wrapper wrapper-style3">
+				<article id="policonv">
+					<header>
+						<h2>Poliedros convexos</h2>
+						
+					</header>
+					<div class="container">
+					<footer>
+					
+						<p style="text-align:justify">Um poliedro é chamado convexo, em relação a uma de suas faces, se está todo contido no mesmo semi-espaço determinado por esta mesma face. Complicado? Vamos entender melhor isso!
+						
+						Considere um poliedro e uma de suas faces: um octaedro, por exemplo. Imagine um plano apoiado nessa face. O poliedro ficou todo de um lado só desse plano? Então ele é convexo! Observe:
+						</p>
+						<span class="logo image "><img src="images/poliedro_convexo.gif" alt="" title="Poliedro Convexo" />Poliedro Convexo</span>
+						<span class="logo image "><img src="images/poliedro_n_convexo.gif" alt="" title="Poliedro Não Convexo" />Poliedro não convexo</span>
+					</footer>
+				</article>
+			</div>
+
+
+
+		<!-- Poliedros e planificações -->
+			<div data-titulo="<li><a>Poliedros Convexos</a></li>" class="wrapper wrapper-style3">
+				<article id="tabela">
+					<header>
+						<h2>Poliedros convexos</h2>
+						
+					</header>
+					<div class="container">
+					<footer>
+					
+						<p style="text-align:center">
+							À seguir, uma tabela com informações sobre alguns poliedros:
+						</p>
+						<div class="beach">
+						  <table border="0" align="center">
+							    <tr align="center">
+								    <th width="100">Name</th>
+									<th width="50">&nbsp;</th>
+									<th width="60">Faces</th>
+									<th width="60">Vertices</th>
+									<th width="60">Edges</th>
+									<th width="60">F+V-E</th>
+								</tr>
+							    <tr align="center">
+								    <td width="100">Tetrahedron</td>
+									<td width="50"><img src="images/50px-Tetrahedron.jpg" width="50" height="47" /></td>
+									<td width="60">4</td>
+									<td width="60">4</td>
+									<td width="60">6</td>
+									<td width="60"><b>2</b></td>
+								</tr>
+								<tr align="center">
+								    <td width="100">Cube</td>
+									<td width="50"><img src="images/50px-Hexahedron.jpg" width="50" height="56" /></td>
+									<td width="60">6</td>
+									<td width="60">8</td>
+									<td width="60">12</td>
+									<td width="60"><b>2</b></td>
+								</tr>
+								
+							    <tr align="center">
+								    <td width="100">Octahedron</td>
+									<td width="50"><img src="images/50px-Octahedron.jpg" width="50" height="50" /></td>
+									<td width="60">8</td>
+									<td width="60">6</td>
+									<td width="60">12</td>
+									<td width="60"><b>2</b></td>
+								</tr>
+							    
+							    
+							    <tr align="center">
+								    <td width="100"> Dodecahedron</td>
+									<td width="50"><img src="images/50px-Dodecahedron.jpg" width="50" height="49" /></td>
+									<td width="60">12</td>
+									<td width="60">20</td>
+									<td width="60">30</td>
+									<td width="60"><b>2</b></td>
+								</tr>
+							    <tr align="center">
+								    <td width="100"> Icosahedron </td>
+									<td width="50"><img src="images/50px-Icosahedron.jpg" width="50" height="48" /></td>
+									<td width="60">20</td>
+									<td width="60">12</td>
+									<td width="60">30</td>
+									<td width="60"><b>2</b></td>
+								</tr>
+					      </table>
+					    </div>
+
+					</footer>
+				</article>
+			</div>
+
+		<!-- Contatu -->
+		<!--	<div class="wrapper wrapper-style4">
+				<article id="contact" class="container small">
+					<header>
+						<h2>Fala cum nois ae!</h2>
+						<span>Manda uma ibagen bunita ou qlr coisa ai lek</span>
+					</header>
+					<div>
+						<div class="row">
+							<div class="12u">
+								<form method="post" action="email.php">
+									<div>
+										<div class="row half">
+											<div class="6u">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row half">
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row half">
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<a href="#" class="button form-button-submit">Manda mesagi</a>
+												<!-- <input type="submit" value="Send Message" class="button form-button-submit" name="submit"> --
+												<a href="#" class="button button-alt form-button-reset">Limpa as parada toda</a>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!--<div class="row">
+							<div class="12u">
+								<hr />
+								<h3>You can find me on...</h3>
+								<ul class="social">									
+									<li class="facebook"><a href="https://www.facebook.com/igor.moura.5477" class="fa fa-facebook"><span>Facebook</span></a></li>									
+									<li class="googleplus"><a href="https://plus.google.com/u/0/106396071983485052242" class="fa fa-google-plus"><span>Google+</span></a></li>
+									<li class="github"><a href="https://github.com/igormp" class="fa fa-github"><span>Github</span></a></li>
+									<!--
+									<li class="twitter"><a href="http://twitter.com/n33co" class="fa fa-twitter"><span>Twitter</span></a></li>
+									<li class="dribbble"><a href="http://dribbble.com/n33" class="fa fa-dribbble"><span>Dribbble</span></a></li>
+									<li class="tumblr"><a href="#" class="fa fa-tumblr"><span>Tumblr</span></a></li>
+									<li class="linkedin"><a href="#" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
+									<li class="rss"><a href="#" class="fa fa-rss"><span>RSS</span></a></li>
+									<li class="instagram"><a href="#" class="fa fa-instagram"><span>Instagram</span></a></li>
+									<li class="foursquare"><a href="#" class="fa fa-foursquare"><span>Foursquare</span></a></li>
+									<li class="skype"><a href="#" class="fa fa-skype"><span>Skype</span></a></li>
+									<li class="soundcloud"><a href="#" class="fa fa-soundcloud"><span>Soundcloud</span></a></li>
+									<li class="youtube"><a href="#" class="fa fa-youtube"><span>YouTube</span></a></li>
+									<li class="blogger"><a href="#" class="fa fa-blogger"><span>Blogger</span></a></li>
+									<li class="flickr"><a href="#" class="fa fa-flickr"><span>Flickr</span></a></li>
+									<li class="vimeo"><a href="#" class="fa fa-vimeo"><span>Vimeo</span></a></li>
+									--
+								</ul> 
+								<hr />
+							</div>
+						</div>--
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Nois da quebrada</li>
+						</ul>
+					</footer>-->
+				</article>
+			</div>
+
+
+	</body>
+</html>
