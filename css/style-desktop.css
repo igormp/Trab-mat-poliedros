@@ -67,6 +67,12 @@
 		font-size: 1.1em;
 	}
 
+	.btnsmall
+	{
+		padding: 0.5em 2.35em 0.75em 2.35em;
+		font-size: 1.1em;
+	}
+
 		.button-big
 		{
 			font-size: 1.5em;
@@ -109,7 +115,7 @@
 	
 		.wrapper-first
 		{
-			padding-top: 12em;
+			padding-top: 8em;
 		}
 
 /*********************************************************************************/

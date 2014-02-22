@@ -55,7 +55,7 @@
 	{
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #338ABD;
 		font-weight: 300;
 	}
 
@@ -88,7 +88,7 @@
 	
 	h1, h2, h3, h4, h5, h6
 	{
-		color: #3e3e3e;
+		color: #247DB3;
 	}
 	
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
@@ -137,9 +137,9 @@
 			padding: 0.75em;
 			font-size: 1em;
 			border-radius: 8px;
-			background: #282828;
-			color: #bbb;
-			box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025);
+			background: #80C6ED;
+			color: #696969;
+			box-shadow: inset 1px 2px 5px 0px , 1px 2px 0px 0px rgba(255,255,255,0.025);
 			width: 100%;
 			-moz-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 			-webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
@@ -153,7 +153,7 @@
 		form select:focus,
 		form textarea:focus
 		{
-			background: #252525;
+			background: #98D7FA;
 			box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025), inset 0px 0px 2px 1px #74CAEE;
 		}
 
@@ -228,6 +228,31 @@
 	{
 		margin-bottom: 0;
 	}
+
+	table
+	{
+		/*margin-left:23.5%;*/
+		margin-left: auto;
+    	margin-right: auto;
+		text-align:center;
+		border-collapse: collapse;
+	}
+	table th
+	{
+		text-align:center;
+		border: solid 2px white;
+		padding: 4px;
+		background: #ACC8F2;
+		font: 17px qarmic, sans-serif; 
+	}
+	table td
+	{
+		text-align:center; 
+		border: solid 2px white; 
+		padding: 4px; 
+		font-size: 15px; 
+	}
+
 
 	.image
 	{
@@ -347,6 +372,89 @@
 				box-shadow: inset 0px 0px 0px 1px #242424, inset 0px -2px 1px 0px rgba(255,255,255,0.2);
 			}
 	
+
+	.btnsmall
+	{
+		position: relative;
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 700;
+		border: 0;
+		outline: 0;
+		cursor: pointer;
+		border-radius: 8px;
+		text-shadow: -1px -1px 0.5px rgba(0,0,0,0.5);
+		overflow: hidden;
+		background: #61b8db;
+		background-image: -moz-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
+		background-image: -webkit-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
+		background-image: -o-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
+		background-image: -ms-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
+		background-image: linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
+		box-shadow: inset 0px 0px 0px 1px #135c86, inset 0px 2px 1px 0px rgba(255,255,255,0.75);
+		-moz-transition: background-color .2s ease-in-out;
+		-webkit-transition: background-color .2s ease-in-out;
+		-o-transition: background-color .2s ease-in-out;
+		-ms-transition: background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;
+	}
+
+		.btnsmall:before
+		{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url('images/bg.png');
+		}
+
+		.btnsmall:hover
+		{
+			background-color: #76cdf0;
+			color: #fff !important;
+		}
+		
+		.btnsmall:active
+		{
+			background-image: -moz-linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
+			background-image: -webkit-linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
+			background-image: -o-linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
+			background-image: -ms-linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
+			background-image: linear-gradient(top, rgba(48,141,196,1), rgba(77,164,199,0));
+			box-shadow: inset 0px 0px 0px 1px #135c86, inset 0px -2px 1px 0px rgba(255,255,255,0.75);
+			top: 1px;
+		}
+	
+		.btnsmall-alt
+		{
+			background-color: #393939;
+			background-image: -moz-linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
+			background-image: -webkit-linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
+			background-image: -o-linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
+			background-image: -ms-linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
+			background-image: linear-gradient(top, rgba(50,50,50,0), rgba(45,45,45,1));
+			box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255,255,255,0.2);
+		}
+
+			.btnsmall-alt:hover
+			{
+				background-color: #444;
+			}
+			
+			.btnsmall-alt:active
+			{
+				background-image: -moz-linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
+				background-image: -webkit-linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
+				background-image: -o-linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
+				background-image: -ms-linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
+				background-image: linear-gradient(top, rgba(45,45,45,1), rgba(50,50,50,0));
+				box-shadow: inset 0px 0px 0px 1px #242424, inset 0px -2px 1px 0px rgba(255,255,255,0.2);
+			}
+	
 		.button-big
 		{
 		}
@@ -449,11 +557,11 @@
 			position: relative;
 		}
 
-/*TESTE*/
-
-		.beach table { border-collapse: collapse; background: #F0F0C0; }
-.beach th { border: solid 2px white; padding: 4px; background: #99bbee; font: 17px qarmic, sans-serif; }
-.beach td { border: solid 2px white; padding: 4px; font-size: 15px; }
+/*TESTE*
+.beach{margin-left:32%;}
+		.beach table {text-align:center; border-collapse: collapse; background: #F0F0C0; }
+.beach th {text-align:center; border: solid 2px white; padding: 4px; background: #99bbee; font: 17px qarmic, sans-serif; }
+.beach td {text-align:center; border: solid 2px white; padding: 4px; font-size: 15px; }
 
 	.center {text-align: center; }
 	table.center {margin-right:auto; margin-left:auto; text-align: inherit;}
@@ -464,7 +572,7 @@
 /* Licensed under the SIL OFL 1.1 (font), MIT (CSS)                              */
 /*********************************************************************************/
 
-/*	.fa
+	.fa
 	{
 		text-decoration: none;
 	}
@@ -951,7 +1059,7 @@
 
 	#nav
 	{
-		background-color: #282828;
+		background-color: #3990BF;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -959,6 +1067,8 @@
 		width: 100%;
 		z-index: 10000;
 		cursor: default;
+		text-shadow: -1px -1px 0.5px rgba(0,0,0,0.5);
+		box-shadow: 0px 4px 5px #888;
 	}
 	
 		#nav ul
@@ -1049,7 +1159,27 @@
 			color: #777;
 		}
 		
-		
+/*********************************************************************************/
+/* Exercicio                                                                     */
+/*********************************************************************************/
+	
+
+
+	#flip
+	{
+		cursor:pointer;
+		visibility:hidden;
+	}
+	
+	#Resultado,#flip
+	{
+		background-color:#e5eecc;
+		border:solid 1px #c3c3c3;
+	}
+	#Resultado
+	{
+		display:none;
+	}	
 		
 /*********************************************************************************/
 /*   Menu                                                                        */

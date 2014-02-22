@@ -8,55 +8,17 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
+		<script src = "js/Funcao.js" ></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/bootstrap.css" />
+			<link rel="stylesheet" href="css/font-awesome.css" />
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 	</head>
-	<body>
-		<!-- Menu -->
-		
-				
-
-				<!--	<ul id="navigation">
-						<!--<a href="#" class="show">[hide]</a>
-						<a href="#" class="hide">[show]</a>-->
-						<!--<li><b><input type="checkbox" id="tm" />Menu</b></li>--
-						<li><a>Menu</a></li>
-						<li><a>Test</a></li>
-						<li><a>Test</a></li>
-						<li><a>Test</a></li>
-						<li><a>Test</a></li>
-						<!--<li><a href="#admn">Administration</a></li>
-						<li><a href="#tools">Tools</a></li>
-						<li><a href="#contact">Contact</a></li>--
-					</ul> -->
-
-				
-			
-			
-			<!--<div id="wrapper">
-				<div class="mobile">
-					<!-- Checkbox to toggle the menu -->
-					<!--<input type="checkbox" id="tm" />-->
-					<!-- The menu -->
-			<!--		<ul class="sidenav">
-						<li><a href="#"><i class="fa fa-check"></i><b>Seção 1</b></a></li>
-						<li><a href="#"><i class="fa fa-inbox"></i><b>Seção 2</b></a></li>
-						<li><a href="#"><i class="fa fa-pencil"></i><b>Seção 3</b></a></li>
-						<li><a href="#"><i class="fa fa-cog"></i><b>Seção 4</b></a></li>
-						<li><a href="#"><i class="fa fa-star"></i><b>Seção 5</b></a></li>
-						<li><a href="#"><i class="fa fa-power-off"></i><b>Seção 6</b></a></li>
-					</ul>-->
-		<!-- Content area -->
-		<!--			<section>
-						<!-- Label for #tm checkbox -->
-						<!--<label for="tm">Menu</label>-->
-		<!--			</section>-->
+	<body onLoad = "Gaia()">
+	
 				</div>
 			</div> 
 
@@ -64,7 +26,6 @@
 				<script>
 					setInterval(function()
 					{
-						//tem_div = 0;
 						for (i=0;i<$('.wrapper').length;i++){
 						var altura_da_tela = $(window).scrollTop(),
 						altura_da_div = $($('.wrapper')[i]).offset().top,
@@ -76,18 +37,13 @@
 						}
 					}
 				
-					//if(!tem_div) $('#nav').html("");
 					}, 50);
 				
 				</script>
 		<!-- Top -->
 			<nav id="nav">			
-				<ul class="container">
-					<!--<li><b><input type="checkbox" id="tm" />Menu</b></li>-->
+				<ul class="container">				
 					<li><a>Introdução</a></li>
-					<!--<li><a href="#admn">Administration</a></li>
-					<li><a href="#tools">Tools</a></li>
-					<li><a href="#contact">Contact</a></li>-->
 				</ul>
 			</nav>
 
@@ -136,8 +92,7 @@
 					<div class="container">
 					<footer>
 					
-						<p style="text-align:justify">Um poliedro é chamado convexo, em relação a uma de suas faces, se está todo contido no mesmo semi-espaço determinado por esta mesma face. Complicado? Vamos entender melhor isso!
-						
+						<p style="text-align:justify">Um poliedro é chamado convexo, em relação a uma de suas faces, se está todo contido no mesmo semi-espaço determinado por esta mesma face. Complicado? Vamos entender melhor isso!<br>						
 						Considere um poliedro e uma de suas faces: um octaedro, por exemplo. Imagine um plano apoiado nessa face. O poliedro ficou todo de um lado só desse plano? Então ele é convexo! Observe:
 						</p>
 						<span class="logo image "><img src="images/poliedro_convexo.gif" alt="" title="Poliedro Convexo" />Poliedro Convexo</span>
@@ -147,12 +102,77 @@
 			</div>
 
 
+		<!-- Poliedros de platão -->
 
-		<!-- Poliedros e planificações -->
-			<div data-titulo="<li><a>Poliedros Convexos</a></li>" class="wrapper wrapper-style3">
+			<div data-titulo="<li><a>Poliedros de Platão</a></li>" class="wrapper wrapper-style2">
+				<article id="poliplat">
+					<header>
+						<h2>Poliedros de Platão</h2>
+						
+					</header>
+					<div class="container">
+					<footer>
+					
+						<p style="text-align:justify">Dentre os poliedros existentes, existem alguns considerados Poliedros de Platão, pois todas as faces possuem o mesmo número de arestas, todos os ângulos poliédricos possuem o mesmo número de arestas e se enquadram na relação de Euler. Os Poliedros considerados de Platão são: Hexaedro (cubo), Dodecaedro, Icosaedro, Octaedro e Tetraedro. 
+						</p>
+						<span class="logo image "><img src="images/poliedros_convexos_planificacao.gif" alt="" title="Poliedros de platão" />Poliedros de platão</span>
+					</footer>
+				</article>
+			</div>
+
+			<div data-titulo="<li><a>Poliedros de Platão</a></li>" class="wrapper wrapper-style2">
+				<article id="poliplat">
+					<header>
+						<h3>De um poliedro de Platão, exige-se que:</h3>
+						
+					</header>
+					<div class="container">
+					<footer>
+					
+						<p style="text-align:justify">
+						&nbsp-Todas as faces sejam polígonos, regulares ou não, mas com o mesmos número de lados;<br>
+						&nbsp-Todos os bicos sejam formados com o mesmo número de arestas.<br><br>
+						Por volta do século VI antes de Cristo, o filósofo Platão estudou os poliedros platônicos relacionando-os aos elementos da natureza. Veja a associação feita por ele:<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTetraedro: fogo<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHexaedro (cubo): terra <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOctaedro: ar<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIcosaedro: água<br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDodecaedro: universo<br><br>
+ 						Além dos poliedros de Platão, os sólidos geométricos como: prismas, pirâmides, paralelepípedos, blocos retangulares e quadrangulares são considerados poliedros. 
+
+						</p>
+					</footer>
+				</article>
+			</div>
+
+
+		<!-- Teorema de Euler -->
+
+			<div data-titulo="<li><a>Teorema de Euler</a></li>" class="wrapper wrapper-style3">
+				<article id="poliplat">
+					<header>
+						<h2>Teorema de Euler</h2>
+						
+					</header>
+					<div class="container">
+					<footer>
+					
+						<p style="text-align:justify">O matemático suíço Leonhard Euler  (1707 – 1783) descobriu uma importante relação entre o número de vértice (V), o número de aresta (A) e o número de faces (F) de um poliedro convexo.<br>
+						O teorema  de Euler foi descoberto em 1758. Desde então diversas demonstrações apareceram na literatura e algumas continham falhas (como a de Cauchy), que foram descobertas muitos anos mais tarde. Essas falhas eram devidas à falta de precisão na definição de poliedro. Mesmo Euler nunca se preocupou em definir precisamente essa palavra.<br>
+						Em todo poliedro com A arestas, V vértices e F faces, vale a relação:<br>
+						<h3><strong>V - A + F = 2</strong></h3>
+
+						</p>
+					</footer>
+				</article>
+			</div>
+
+
+		<!-- Tabela Poliedros -->
+			<div data-titulo="<li><a>Tabela sobre Poliedros</a></li>" class="wrapper wrapper-style2">
 				<article id="tabela">
 					<header>
-						<h2>Poliedros convexos</h2>
+						<h2>Tabela sobre Poliedros</h2>
 						
 					</header>
 					<div class="container">
@@ -161,134 +181,227 @@
 						<p style="text-align:center">
 							À seguir, uma tabela com informações sobre alguns poliedros:
 						</p>
-						<div class="beach">
 						  <table border="0" align="center">
 							    <tr align="center">
-								    <th width="100">Name</th>
-									<th width="50">&nbsp;</th>
-									<th width="60">Faces</th>
-									<th width="60">Vertices</th>
-									<th width="60">Edges</th>
-									<th width="60">F+V-E</th>
+							    	<th width="100">Nome</th>
+							    	<th width="100">Tetraedro</th>
+							    	<th width="100">Hexaedro</th>
+							    	<th width="100">Octaedro</th>
+							    	<th width="100">Dodecaedro</th>
+							    	<th width="100">Icosaedro</th>
+								</tr>
+								 <tr align="center">
+							    	<th width="100">Representação</th>
+							    	<td width="100"><img src="images/tetraedro.jpg"/></td>
+							    	<td width="100"><img src="images/hexaedro.jpg"/></td>
+							    	<td width="100"><img src="images/octaedro.jpg"/></td>
+							    	<td width="100"><img src="images/dodecaedro.jpg"/></td>
+							    	<td width="100"><img src="images/icosaedro.jpg"/></td>
 								</tr>
 							    <tr align="center">
-								    <td width="100">Tetrahedron</td>
-									<td width="50"><img src="images/50px-Tetrahedron.jpg" width="50" height="47" /></td>
-									<td width="60">4</td>
-									<td width="60">4</td>
-									<td width="60">6</td>
-									<td width="60"><b>2</b></td>
+							    	<th width="100">Faces</th>
+							    	<td width="100">4</td>
+							    	<td width="100">6</td>
+							    	<td width="100">8</td>
+							    	<td width="100">12</td>
+							    	<td width="100">20</td>
 								</tr>
 								<tr align="center">
-								    <td width="100">Cube</td>
-									<td width="50"><img src="images/50px-Hexahedron.jpg" width="50" height="56" /></td>
-									<td width="60">6</td>
-									<td width="60">8</td>
-									<td width="60">12</td>
-									<td width="60"><b>2</b></td>
-								</tr>
-								
-							    <tr align="center">
-								    <td width="100">Octahedron</td>
-									<td width="50"><img src="images/50px-Octahedron.jpg" width="50" height="50" /></td>
-									<td width="60">8</td>
-									<td width="60">6</td>
-									<td width="60">12</td>
-									<td width="60"><b>2</b></td>
-								</tr>
-							    
-							    
-							    <tr align="center">
-								    <td width="100"> Dodecahedron</td>
-									<td width="50"><img src="images/50px-Dodecahedron.jpg" width="50" height="49" /></td>
-									<td width="60">12</td>
-									<td width="60">20</td>
-									<td width="60">30</td>
-									<td width="60"><b>2</b></td>
+									<th width="100">Vértices</th>
+									<td width="100">4</td>
+									<td width="100">8</td>
+									<td width="100">6</td>
+									<td width="100">20</td>
+									<td width="100">12</td>
 								</tr>
 							    <tr align="center">
-								    <td width="100"> Icosahedron </td>
-									<td width="50"><img src="images/50px-Icosahedron.jpg" width="50" height="48" /></td>
-									<td width="60">20</td>
-									<td width="60">12</td>
-									<td width="60">30</td>
-									<td width="60"><b>2</b></td>
+							    	<th width="100">Arestas</th>
+							    	<td width="100">6</td>
+							    	<td width="100">12</td>
+							    	<td width="100">12</td>
+							    	<td width="100">30</td>
+							    	<td width="100">30</td>
+								</tr>			
+							    <tr align="center">
+							    	<th width="100">A-F+V=</th>
+							    	<td width="100">2</td>
+							    	<td width="100">2</td>
+							    	<td width="100">2</td>
+							    	<td width="100">2</td>
+							    	<td width="100">2</td>					
+								</tr>
+								<tr align="center">
+							    	<th width="100">Forma da Face</th>
+							    	<td width="100">Triângulo</td>
+							    	<td width="100">Quadrado</td>
+							    	<td width="100">Triângulo</td>
+							    	<td width="100">Pentágono</td>
+							    	<td width="100">Triângulo</td>			
+								</tr>
+								<tr align="center">
+							    	<th width="100">Ângulo Diedro</th>
+							    	<td width="100">70°32'</td>
+							    	<td width="100">90°</td>
+							    	<td width="100">109°28'</td>
+							    	<td width="100">116°34'</td>
+							    	<td width="100">138°11'</td>			
+								</tr>
+								<tr align="center">
+							    	<th width="100">Ângulo Central</th>
+							    	<td width="100">109°28'</td>
+							    	<td width="100">70°32'</td>
+							    	<td width="100">90°</td>
+							    	<td width="100">41°49'</td>
+							    	<td width="100">63º26'</td>			
+								</tr>
+								<tr align="center">
+							    	<th width="100">Raio Insfera</th>
+							    	<td width="100">0,2141 * A</td>
+							    	<td width="100">0,5 * A</td>
+							    	<td width="100">0,4082 * A</td>
+							    	<td width="100">1,1135 * A</td>
+							    	<td width="100">0,7558 * A</td>			
+								</tr>
+								<tr align="center">
+							    	<th width="100">Raio Meiosfera</th>
+							    	<td width="100">0,3536 * A</td>
+							    	<td width="100">0,7071 * A</td>
+							    	<td width="100">0,5 * A</td>
+							    	<td width="100">1,3092 * A</td>
+							    	<td width="100">0,8090 * A</td>			
+								</tr>										<tr align="center">
+							    	<th width="100">Raio Circunsfera</th>
+							    	<td width="100">0,6124 * A</td>
+							    	<td width="100">0,8660 * A</td>
+							    	<td width="100">0,7071 * A</td>
+							    	<td width="100">1,4013 * A</td>
+							    	<td width="100">0,9511 * A</td>			
+								</tr>										<tr align="center">
+							    	<th width="100">Superfície</th>
+							    	<td width="100">1,7321 * A²</td>
+							    	<td width="100">6 * A²</td>
+							    	<td width="100">3,4641 * A²</td>
+							    	<td width="100">20,6457 * A²</td>
+							    	<td width="100">7,6631 * A²</td>			
+								</tr>										<tr align="center">
+							    	<th width="100">Volume</th>
+							    	<td width="100">0,1179 * A³</td>
+							    	<td width="100">A³</td>
+							    	<td width="100">0,4714 * A³</td>
+							    	<td width="100">7,6631 * A³</td>
+							    	<td width="100">20,6457 * A³</td>			
+								</tr>										<tr align="center">
+							    	<th width="100">Altura</th>
+							    	<td width="100">0,8165 * A * (V-F)</td>
+							    	<td width="100">A * (F-F)</td>
+							    	<td width="100">0,7071A * (V-V)</td>
+							    	<td width="100">2,2270 * A * (F-F)</td>
+							    	<td width="100">1,5116 * A * (F-F)</td>	
 								</tr>
 					      </table>
-					    </div>
+					     <p style="text-align:justify">
+							•A = comprimento da Aresta<br>
+							•Ângulo diedro - ângulo entre duas faces<br>
+							•Ângulo central - ângulo entre dois raios da Circunsfera tomados a partir de dois vértices de uma aresta<br>
+							•Insfera - esfera interna ao Poliedro - tangente ao ponto central de todas as faces<br>
+							•Meiosfera - esfera média ao Poliedro - tangente ao ponto médio de todas as arestas.<br>
+							•Circunsfera - esfera externa ao Poliedro - tangente a todos os vértices.
 
+						</p>
 					</footer>
 				</article>
 			</div>
 
-		<!-- Contatu -->
-		<!--	<div class="wrapper wrapper-style4">
+		<!-- Cálculo -->
+			<div data-titulo="<li><a>Cálculo da fórmula de Euler</a></li>" class="wrapper wrapper-style3" >
 				<article id="contact" class="container small">
 					<header>
-						<h2>Fala cum nois ae!</h2>
-						<span>Manda uma ibagen bunita ou qlr coisa ai lek</span>
+						<h2>Cálculo da fórmula de Euler</h2>
+						<span>Teste aqui seus conhecimentos, lembrando-se da fórmula:</span><br>
+						<span><strong>V - A + F = 2</strong></span>
 					</header>
 					<div>
 						<div class="row">
 							<div class="12u">
-								<form method="post" action="email.php">
-									<div>
+								<form>
+									<div name="x" id="x">
 										<div class="row half">
+
+											<div class="2u">
+												<select id="Select1" name="V" onChange="Consertar()">
+  													<option value="Vertice" selected = "selected" >Vertice</option>
+													<option value="Face">Face</option>
+													<option value="Aresta">Aresta</option>
+												</select>
+											</div>
+
 											<div class="6u">
-												<input type="text" name="name" id="name" placeholder="Name" />
+												<input type="text" id="Caixa1"  size="10" placeholder="Vertice" onChange="Cont()"/>
 											</div>
+
+											<div class="4u">
+												<input class="btnsmall" id = "Caixa_1" type="button" value = "Gerar valor aleatório" onclick="Aleatorio('Caixa1')"> 
+											</div>
+
+										</div>
+
+										<div class="row half">	
+
+											<div class="2u">
+												<select id="Select2" name="F" onChange="Consertar ()">
+	   												<option value = "Op1" id = "Op1" selected = "selected"> Face </option>
+	   												<option value = "Op2" id = "Op2"> Aresta </option>
+												</select>
+											</div>	
+
 											<div class="6u">
-												<input type="text" name="email" id="email" placeholder="Email" />
+												<input type="text" id="Caixa2"  size = "10" placeholder = "Face" onChange="Cont()"/>
 											</div>
+
+											<div class="4u">
+												<input class="btnsmall" id = "Caixa_2" type="button" value = "Gerar valor aleatório" onclick="Aleatorio('Caixa2')"> 
+											</div>
+
 										</div>
+										
 										<div class="row half">
-											<div class="12u">
-												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											<div class="3u">
+												<span>Digite o valor da</span>
+												<span id = "Rsp">Aresta  </span>
 											</div>
-										</div>
-										<div class="row half">
-											<div class="12u">
-												<textarea name="message" id="message" placeholder="Message"></textarea>
+
+											<div class="5u">
+												<input type="text" size = '10' id="Teste" placeholder = "Aresta">
 											</div>
+
+											<div class="4u">
+												<input class="btnsmall" id="BtTeste" type="button" value="Testar Resposta" onclick="Validador()"> </span>
+											</div>
+
 										</div>
+
 										<div class="row">
-											<div class="12u">
-												<a href="#" class="button form-button-submit">Manda mesagi</a>
-												<!-- <input type="submit" value="Send Message" class="button form-button-submit" name="submit"> --
-												<a href="#" class="button button-alt form-button-reset">Limpa as parada toda</a>
+											<div class="8u">
+												<div id="flip" >
+													Ver Resposta !
+												</div>
+												<div id="Resultado"></div>
+											</div>
+
+											<div class="4u">
+												<input id = "Limpar" class="button" type="button" value = "Limpar tela" onclick="Gaia()" style="visibility: hidden">
 											</div>
 										</div>
+
 									</div>
+
 								</form>
+
 							</div>
+
 						</div>
 						<!--<div class="row">
-							<div class="12u">
-								<hr />
-								<h3>You can find me on...</h3>
-								<ul class="social">									
-									<li class="facebook"><a href="https://www.facebook.com/igor.moura.5477" class="fa fa-facebook"><span>Facebook</span></a></li>									
-									<li class="googleplus"><a href="https://plus.google.com/u/0/106396071983485052242" class="fa fa-google-plus"><span>Google+</span></a></li>
-									<li class="github"><a href="https://github.com/igormp" class="fa fa-github"><span>Github</span></a></li>
-									<!--
-									<li class="twitter"><a href="http://twitter.com/n33co" class="fa fa-twitter"><span>Twitter</span></a></li>
-									<li class="dribbble"><a href="http://dribbble.com/n33" class="fa fa-dribbble"><span>Dribbble</span></a></li>
-									<li class="tumblr"><a href="#" class="fa fa-tumblr"><span>Tumblr</span></a></li>
-									<li class="linkedin"><a href="#" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
-									<li class="rss"><a href="#" class="fa fa-rss"><span>RSS</span></a></li>
-									<li class="instagram"><a href="#" class="fa fa-instagram"><span>Instagram</span></a></li>
-									<li class="foursquare"><a href="#" class="fa fa-foursquare"><span>Foursquare</span></a></li>
-									<li class="skype"><a href="#" class="fa fa-skype"><span>Skype</span></a></li>
-									<li class="soundcloud"><a href="#" class="fa fa-soundcloud"><span>Soundcloud</span></a></li>
-									<li class="youtube"><a href="#" class="fa fa-youtube"><span>YouTube</span></a></li>
-									<li class="blogger"><a href="#" class="fa fa-blogger"><span>Blogger</span></a></li>
-									<li class="flickr"><a href="#" class="fa fa-flickr"><span>Flickr</span></a></li>
-									<li class="vimeo"><a href="#" class="fa fa-vimeo"><span>Vimeo</span></a></li>
-									--
-								</ul> 
-								<hr />
-							</div>
-						</div>--
+							
 					</div>
 					<footer>
 						<ul id="copyright">
