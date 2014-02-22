@@ -19,7 +19,7 @@ function Gaia()
    document.getElementById("Caixa2").value = "";
    document.getElementById("Teste").value = "";
    document.getElementById("Rsp").innerHTML = "Aresta";
-   document.getElementById("Limpar").style.visibility =  document.getElementById("flip").style.visibility = "hidden";
+   document.getElementById("flip").style.visibility = "hidden";
   var nodes = document.getElementById("x").getElementsByTagName('*');
   document.getElementById("Resultado").style.display = "none"
 for(var i = 0; i < nodes.length; i++)
