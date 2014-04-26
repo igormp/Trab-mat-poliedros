@@ -82,8 +82,8 @@ function Validador() /*valida e testa se os valores estão certos*/
 		  document.getElementById("Alert").innerHTML = "Valor inválido no campo: "+x; 
 		  Validador = true;
              	       break;
-	} else if (Validador =  (Vetor[x] % 1 != 0 || Vetor[x]<=0))	{
-	  document.getElementById("Alert").innerHTML = "Matematicamente Impossivel! "+x+" precisa ser natural e diferente de 0"; 
+	} else if (Validador = Vetor[x]<=0)	{
+	  document.getElementById("Alert").innerHTML = "Matematicamente Impossivel! "+x+" é negativa ou igual a 0"; 
 	  Validador = true;	 
 	  break;
 	}
@@ -121,14 +121,13 @@ function Validador() /*valida e testa se os valores estão certos*/
 	             +'<br>f = '+total;  
                  
        }
-if (!Validador)
- {
-   if (total <= 0)
+ if (total <= 0)
  {
       document.getElementById("Alert").innerHTML =  "Matematicamente Impossivel!\nSegundo os calculos a resposta será negativa ou igual a 0";
 	  Validador = true;
  }
- 
+ if (!Validador)
+ {
   if ( isNaN(Vetor['Resposta'] = document.getElementById("Teste").value))
          document.getElementById("Alert").innerHTML =  'Campo Resposta Inválida!';
    else if (Vetor['Resposta'].trim() == "")
